@@ -9,6 +9,25 @@
     border: 1px solid black;
     height: 100%;
     text-align: center;
+    position: relative;
+}
+
+.debug .container>[class*="col-"] .container {
+    height: 100%;
+    padding: 1%;
+}
+
+.debug .container>[class*="col-"] .container>[class*="col-"] {
+    background-color: #f07f80;
+    border: 1px solid white;
+    height: 100%;
+}
+
+.debug [class*="col-"] span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* FRAMEWORK */
